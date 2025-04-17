@@ -7,6 +7,9 @@
 
 # Specific joint properties can be changed with the keys [max_position, min_position, max_velocity, max_acceleration]
 # Joint limits can be turned off with [has_velocity_limits, has_acceleration_limits]
+# 在机械臂的URDF模型文件中，通常会通过<limit>属性指定各个joint的位置、速度限制
+# [max_position, min_position, max_velocity, max_acceleration]设置 关节最大位置、最小位置、最大速度和最大加速度
+# [has_velocity_limits, has_acceleration_limits] 选择开启或关闭 速度限制和加速度限制
 joint_limits:
   arm_1_joint:
     has_velocity_limits: true
