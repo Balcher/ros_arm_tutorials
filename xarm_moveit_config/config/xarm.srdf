@@ -58,6 +58,14 @@
         <joint name="arm_6_joint" value="0.5" />
     </group_state>
 
+    <group_state name="ready" group="xarm">
+        <joint name="arm_1_joint" value="0"/>
+        <joint name="arm_2_joint" value="0"/>
+        <joint name="arm_3_joint" value="0"/>
+        <joint name="arm_4_joint" value="0"/>
+        <joint name="arm_5_joint" value="0"/>
+        <joint name="arm_6_joint" value="0"/>
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="hand" parent_link="gripper_centor_link" group="gripper" parent_group="xarm"/>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
