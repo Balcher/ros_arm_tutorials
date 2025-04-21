@@ -178,7 +178,7 @@ mtc::Task PickPlaceDemo::createTask()
             stage->properties().set("marker_ns", "approach_object");              // marker_ns：命名空间，用于在Rviz中可视化。设置 RViz 中可视化标记的命名空间（approach_object）
             stage->properties().set("link", hand_frame);                          // link：指定移动的参考坐标系，这里设置为hand_frame（夹爪的参考坐标系）
             stage->properties().configureInitFrom(mtc::Stage::PARENT, {"group"}); // 从父阶段继承属性，包括group属性
-            stage->setMinMaxDistance(0.1, 0.2);                                   // 设置运动范围，最小距离为0.1，最大距离为0.2
+            stage->setMinMaxDistance(0.02, 0.2);                                   // 设置运动范围，最小距离为0.1，最大距离为0.2
 
             // Set hand forward direction
             // 设置运动方向
