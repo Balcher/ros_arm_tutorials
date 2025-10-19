@@ -12,6 +12,7 @@ find_package(rclcpp REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(moveit_visual_tools REQUIRED)
 find_package(moveit_task_constructor_core REQUIRED)
+find_package(geometric_shapes REQUIRED)
 
 
 
@@ -25,6 +26,7 @@ ament_target_dependencies(
   "moveit_ros_planning_interface"
   "rclcpp"
   "tf2"
+  "geometric_shapes"
 )
 
 add_executable(moveit_pose_demo src/moveit_pose_demo.cpp)
@@ -37,6 +39,7 @@ ament_target_dependencies(
   "moveit_ros_planning_interface"
   "rclcpp"
   "tf2"
+  "geometric_shapes"
 )
 
 add_executable(moveit_joint_pose_demo src/moveit_joint_pose_demo.cpp)
@@ -49,6 +52,7 @@ ament_target_dependencies(
   "moveit_ros_planning_interface"
   "rclcpp"
   "tf2"
+  "geometric_shapes"
 )
 
 add_executable(moveit_planning_scene_demo src/moveit_planning_scene_demo.cpp)
@@ -61,6 +65,7 @@ ament_target_dependencies(
   "moveit_ros_planning_interface"
   "rclcpp"
   "tf2"
+  "geometric_shapes"
 )
 
 add_executable(moveit_pick_place_demo src/moveit_pick_place_demo.cpp)
@@ -74,6 +79,7 @@ ament_target_dependencies(
   "rclcpp"
   "tf2"
   "moveit_task_constructor_core"
+  "geometric_shapes"
 )
 
 add_executable(moveit_beeline_demo src/moveit_beeline_demo.cpp)
@@ -87,6 +93,7 @@ ament_target_dependencies(
   "rclcpp"
   "tf2"
   "moveit_task_constructor_core"
+  "geometric_shapes"
 )
 
 add_executable(moveit_arcline_demo src/moveit_arcline_demo.cpp)
@@ -100,6 +107,7 @@ ament_target_dependencies(
   "rclcpp"
   "tf2"
   "moveit_task_constructor_core"
+  "geometric_shapes"
 )
 
 install(TARGETS hello_moveit moveit_pose_demo moveit_joint_pose_demo moveit_planning_scene_demo moveit_pick_place_demo
